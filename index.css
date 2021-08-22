@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-menu{
+    width: 1280px;
+    margin: 30px auto;
+    background-image: url(./Unilever-fb-shared-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fixed-width{
+    width: 1170px;
+    margin: auto;
+}
+.header{
+    background-color: #0fb96aec;
+}
+.left-logo{
+    width: 30%;
+    float: left;
+}
+.left-logo img{
+    width: 50%;
+}
+.right-menu{
+    width: 70%;
+    float: right;
+}
+.right-menu ul{
+    list-style: none;
+    text-align: right;
+}
+.right-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.right-menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 134px;
+    padding: 0 20px;
+    font-size: 20px;
+    transition: .5s;
+}
+.right-menu ul li a:hover{
+    color: tomato;
+}
+.right-menu ul li ul{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+
+}
+.right-menu ul li ul li{
+    display: block;
+
+}
+.right-menu ul li ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(17, 16, 16);
+    line-height: 40px;
+    text-align: justify;
+    color: limegreen;
+    background-color: white;
+
+}
+.right-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    
+    
+}
+/* banner */
+.banner{
+    width: 100%;
+    background-color: rgba(17, 238, 208, 0.815);
+}
+.banner-head{
+    text-align: center;
+    color: rgba(48, 11, 212, 0.815);
+    padding-top: 20px;
+}
+.pic{
+    width: 40%;
+    float: left;
+}
+.pic img{
+    width: 100%;
+}
+.lorem{
+    width: 50%;
+    float: right;
+}
+.lorem p{
+    width: 100%;
+    text-align: justify;
+    color: rgba(29, 9, 117, 0.699);
+    padding-top: 10px;
+}
+.container{
+    text-align: center;
+    background-color: rgba(5, 46, 53, 0.87);
+    height: 800px;
+}
+.cont-head{
+    text-align: center;
+    color: rgb(243, 233, 233);
+    padding-top: 20px;
+}
+.div1{
+    float: left;
+    width: 20%;
+    margin: 20px;
+    height: 200px;
+    margin-left: 35px;
+    position: relative;
+}
+.div1 img{ 
+    width: 100%;
+    min-height: 100%;
+}
+.price{
+    /* text-decoration: line-through; */
+    font-size: 15px;
+    color: rgb(240, 230, 230);
+}
+.price span{
+    text-decoration: line-through;
+    color: rgb(228, 13, 13);
+}
+.div1::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgba(105, 240, 15, 0.418);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.div1:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+/* service */
+.services{
+    background-color: rgba(84, 193, 207, 0.897);
+    width: 100%;
+    height: 900px;
+}
+.s-head{
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(86, 65, 221);
+}
+.left{
+    width: 20%;
+    height: 200px;
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.left img{
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.right{
+    float: right;
+    width: 68%;
+}
+.right h2{
+    color: white;
+    padding-top: 50px;
+}
+.right p{
+    color: white;
+    padding-top: 10px;
+}
+.footer{
+    background-color: rgba(90, 87, 87, 0.938);
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+.div2{
+    width: 20%;
+    float: left;
+    margin-left: 10px;
+   
+}
+.div2 ul{
+    list-style: none;
+}
+.div2 ul li{
+    padding: 10px;
+
+}
+.div2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.div3{
+    background-color: black;
+    display: inline-block;
+    float: right;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.div3 a{
+    padding: 20px 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom{
+    background-color: rgba(90, 87, 87, 0.938);
+}
+.footer-bottom h3{
+    text-align: left;
+    color: thistle;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.footer-bottom ul {
+	list-style: none;
+	text-align: right;
+	position: relative;
+	top: -28px;
+	bottom: 0;
+	right: 33px;
+}
+.footer-bottom ul li{
+    display: inline-block;
+}
+.footer-bottom ul li a{ 
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 30px;
+    color: white;
+    line-height: 10px;
+}
